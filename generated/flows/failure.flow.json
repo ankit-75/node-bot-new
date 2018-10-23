@@ -1,0 +1,21 @@
+{
+  "version": "0.1",
+  "catchAll": {},
+  "startNode": "OOPS",
+  "nodes": [
+    {
+      "id": "d4ec8d5f1e",
+      "name": "OOPS",
+      "onEnter": [
+        "say #!builtin_text-61ICjF"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "END"
+        }
+      ]
+    }
+  ]
+}

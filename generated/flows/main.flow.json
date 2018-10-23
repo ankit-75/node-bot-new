@@ -1,0 +1,233 @@
+{
+  "version": "0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": []
+  },
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "rjamSg7LNJbzrEoftkYxQ",
+      "name": "entry",
+      "onEnter": [
+        "start {}",
+        "say #!builtin_text-CfVCMe",
+        "say #!builtin_single-choice-XC2PdZ",
+        "console {}"
+      ],
+      "onReceive": [],
+      "next": [
+        {
+          "condition": "event.text == \"Continue\"",
+          "node": "Scenario_A"
+        },
+        {
+          "condition": "event.text == 'Reschedule'",
+          "node": "Scenario_B"
+        },
+        {
+          "condition": "true",
+          "node": "failure.flow.json"
+        }
+      ]
+    },
+    {
+      "id": "fbc370e659",
+      "name": "oops",
+      "next": [
+        {
+          "condition": "true",
+          "node": "END"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-YOZV6M"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "565c249947",
+      "name": "Scenario_A",
+      "next": [
+        {
+          "condition": "event.text == 'Yes'",
+          "node": "Scenario_D"
+        },
+        {
+          "condition": "event.text == 'No'",
+          "node": "Scenario_E"
+        },
+        {
+          "condition": "true",
+          "node": "failure.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_single-choice-sahuez"
+      ],
+      "onReceive": []
+    },
+    {
+      "id": "eb76adc19f",
+      "name": "Scenario_B",
+      "next": [
+        {
+          "condition": "event.text == 'Yes'",
+          "node": "confirm_time"
+        },
+        {
+          "condition": "event.text == 'No'",
+          "node": "deny_time"
+        },
+        {
+          "condition": "true",
+          "node": "failure.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_single-choice-xbXRkC"
+      ],
+      "onReceive": []
+    },
+    {
+      "id": "f0021487c5",
+      "name": "confirm_time",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-wKij5a"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "a017b3278d",
+      "name": "deny_time",
+      "next": [
+        {
+          "condition": "true",
+          "node": "END"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-RaYaRu"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "4e03c7cba9",
+      "name": "Scenario_D",
+      "next": [
+        {
+          "condition": "event.text != ''",
+          "node": "Question_1"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-b2uY1a"
+      ],
+      "onReceive": [
+        "setUserTag {\"name\":\"dob\",\"value\":\"{{event.text}}\"}"
+      ]
+    },
+    {
+      "id": "7b0ed75bbf",
+      "name": "Scenario_E",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Scenario_D"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-Ac6wej"
+      ],
+      "onReceive": [
+        "setUserTag {\"name\":\"fullname\",\"value\":\"{{event.text}}\"}"
+      ]
+    },
+    {
+      "id": "a5a5ba1e0c",
+      "name": "Question_1",
+      "next": [
+        {
+          "condition": "event.text != ''",
+          "node": "Question_2"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-u~DR0W"
+      ],
+      "onReceive": [
+        "setUserTag {\"name\":\"pincode\",\"value\":\"{{event.text}}\"}"
+      ]
+    },
+    {
+      "id": "95d93dddae",
+      "name": "Question_3",
+      "next": [
+        {
+          "condition": "event.text == 'For Self'",
+          "node": "Question_4"
+        },
+        {
+          "condition": "true",
+          "node": "Question_3_Other"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_single-choice-pWEYWy"
+      ],
+      "onReceive": [
+        "setUserTag {\"name\":\"policy_status\",\"value\":\"{{event.text}}\"}"
+      ]
+    },
+    {
+      "id": "3b3a849517",
+      "name": "Question_2",
+      "next": [
+        {
+          "condition": "event.text != ''",
+          "node": "Question_3"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-AtxeLe"
+      ],
+      "onReceive": [
+        "setUserTag {\"name\":\"address\",\"value\":\"{{event.text}}\"}"
+      ]
+    },
+    {
+      "id": "fb4654fe23",
+      "name": "Question_4",
+      "next": [
+        {
+          "condition": "true",
+          "node": "END"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-jL0zO6"
+      ],
+      "onReceive": [
+        "setUserTag {\"name\":\"income\",\"value\":\"{{event.text}}\"}",
+        "console {}"
+      ]
+    },
+    {
+      "id": "4dc1aa2e48",
+      "name": "Question_3_Other",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Question_4"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-2e6RQy"
+      ],
+      "onReceive": [
+        "setUserTag {\"name\":\"relationship\",\"value\":\"{{event.text}}\"}"
+      ]
+    }
+  ]
+}

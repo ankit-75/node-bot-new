@@ -1,0 +1,45 @@
+_______________________________________________________________________________________
+###### Install Dependency ##
+npm install
+
+
+###### start Project #######
+npm start
+
+
+###### Open Project ########
+Admin :-  localhost:3000
+Chat  :-  localhost:3000/s/chat
+
+
+
+######## MENU ##############
+1.Flows
+	Create  I/O flow
+
+2.HITL
+	List of users chat
+
+######## For More Detail ###
+https://botpress.io/docs/10.34/getting_started/
+
+
+
+__________________________________________________________________________________________
+
+####### Write Custom Action ##############
+src/actions.js
+
+
+######## Change Builtin Text Style ########
+node_modules/@botpress/builtins/dist/renderers/builtin_text.js
+
+
+######## Change Builtin Choice  Style ########
+node_modules/@botpress/builtins/dist/renderers/builtin_single-choice.js
+
+
+
+
+
+

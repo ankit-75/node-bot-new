@@ -1,0 +1,12 @@
+[
+  {
+    "id": "builtin_action-button-X769M1",
+    "formData": {
+      "title": "action button",
+      "action": "Open URL",
+      "url": "asdf sasd fas fsa f"
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-09-26T10:32:50.592Z"
+  }
+]

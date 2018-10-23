@@ -1,0 +1,20 @@
+[
+  {
+    "id": "builtin_card-EQI5ME",
+    "formData": {
+      "title": "Hello ",
+      "subtitle": "This a card",
+      "image": "/media/5bfuce9chskal8c0so74-img4.jpg",
+      "actions": [
+        {
+          "title": "NONO ",
+          "action": "Open URL",
+          "url": "abc"
+        }
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-09-26T10:29:04.449Z"
+  }
+]

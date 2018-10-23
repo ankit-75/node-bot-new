@@ -1,0 +1,50 @@
+.botpress__messages-container{
+  color: "rgb(24, 1, 187)",
+  borderLeft: "2px solid rgb(0, 8, 162)",
+  padding: "10px",
+  fontWeight: "600",
+  fontSize: "20px",
+  fontFamily: "'Lato', sans-serif"
+}
+.botpress__side-conversation{
+  border: 1px solid rgba(0, 0, 255, .3);
+  fontFamily: "'Lato', sans-serif"
+}
+/*.botpress__side-internal {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, .3);
+}*/
+
+.botpress__side-external .botpress__side-internal .botpress__side-header {
+  border: 2px solid #0f0;
+}
+.botpress__messages-container{
+  border: 2px solid #00f;
+}
+
+/*.botpress__side-header-bot-name,
+.botpress__message-date,
+.botpress__side-item-name,
+.botpress__side-internal .botpress__side-header .botpress__toggle-convos-button i,
+.botpress__side-internal .botpress__side-header .botpress__close-button i {
+  color: #fff;
+}
+
+.botpress__side-conversation,
+.botpress__side-header,
+.botpress__convos-list {
+  background-color: rgba(255, 0, 0, .3);
+}
+
+.botpress__side-external .botpress__side-internal .botpress__side-conversation .botpress__side-conversation-bottom .botpress__side-new-message {
+  background-color: transparent;
+}
+
+.botpress__side-external .botpress__side-item-right .botpress__side-item-title .botpress__side-item-date span,
+.botpress__side-external .botpress__side-internal .botpress__convos-list .botpress__convo-item .botpress__side-item-right .botpress__side-item-text {
+  color: #000;
+}
+
+.botpress__side-external .botpress__side-internal .botpress__convos-list .botpress__convo-item:hover {
+  background-color: rgba(0, 0, 0, .35);
+}*/

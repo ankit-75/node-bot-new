@@ -1,0 +1,169 @@
+[
+  {
+    "id": "builtin_text-2LBKAL",
+    "formData": {
+      "text": "Hello, I am a weather Bot",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-09-25T09:14:49.068Z"
+  },
+  {
+    "id": "builtin_text-sF5Mfm",
+    "formData": {
+      "text": "How can I Help You?",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-09-25T09:16:11.686Z"
+  },
+  {
+    "id": "builtin_text-~3mj~r",
+    "formData": {
+      "text": "In which Location?",
+      "variations": [
+        "Please Provide Location"
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-09-25T09:16:47.085Z"
+  },
+  {
+    "id": "builtin_text-crwYmV",
+    "formData": {
+      "text": "Thank you for continuing with the process, as per our recodrs your Full Name is <Full Name>, to confirm, please respond with \"Yes\", else \"No\" to update your Full Name",
+      "variations": [],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-09-25T09:18:08.538Z"
+  },
+  {
+    "id": "builtin_text-YOZV6M",
+    "formData": {
+      "text": "Sorry, we couldn't catch your response, can you please repeat",
+      "variations": [],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-09-25T09:19:02.441Z"
+  },
+  {
+    "id": "builtin_text-dtdc1P",
+    "formData": {
+      "text": "It is currently {{state.condition}} in {{state.city}} at the moment. The temperature is {{state.temperature_c}} degrees, the humidity is {{state.humidity}}% and the wind speed is {{state.wind_mph}} mph.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-09-25T09:19:44.408Z"
+  },
+  {
+    "id": "builtin_text-CfVCMe",
+    "formData": {
+      "text": "Hi {{state.fullname}} , We are calling from Apollo Munich Health Insurance Company. This is a scheduled call as requested by Mr/Mrs. <Agent Name>. Thanks for showing interest in Apollo Munich's health Insurance Product <Product Name>. Would you like to continue with your application process right now or shall we reschedule the call to a later time. ",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-09-27T09:47:23.126Z"
+  },
+  {
+    "id": "builtin_text-b2uY1a",
+    "formData": {
+      "text": "Thanks for confirming, can you please tell us your Date of Birth, please state your DOB in format Date - Month - Year. For example  \"29 - September - 1987\"",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-09-27T10:20:49.986Z"
+  },
+  {
+    "id": "builtin_text-u~DR0W",
+    "formData": {
+      "text": "Please tell us the Pincode of your residential address",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-09-27T10:27:30.548Z"
+  },
+  {
+    "id": "builtin_text-AtxeLe",
+    "formData": {
+      "text": "Please tell us your complete residential address",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-09-27T10:28:16.226Z"
+  },
+  {
+    "id": "builtin_text-freCDh",
+    "formData": {
+      "text": "Are you buying the policy for yourself or for anyone else",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-09-27T10:29:01.404Z"
+  },
+  {
+    "id": "builtin_text-jL0zO6",
+    "formData": {
+      "text": "Can you please tell us your annual income",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-09-27T10:29:48.973Z"
+  },
+  {
+    "id": "builtin_text-61ICjF",
+    "formData": {
+      "text": "Sorry, we couldn't catch your response, can you please repeat",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-09-27T10:35:03.945Z"
+  },
+  {
+    "id": "builtin_text-iJyMrl",
+    "formData": {
+      "text": "Ok, can you please confirm an alternate time where we can connect with you again",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-09-27T10:39:12.044Z"
+  },
+  {
+    "id": "builtin_text-Ac6wej",
+    "formData": {
+      "text": "For our records, can you please tell us your full name",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-09-27T10:42:47.030Z"
+  },
+  {
+    "id": "builtin_text-wKij5a",
+    "formData": {
+      "text": "Thank you, we will connect with you at your stipulated time",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-09-27T10:43:54.255Z"
+  },
+  {
+    "id": "builtin_text-RaYaRu",
+    "formData": {
+      "text": "Ok",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-09-27T10:45:51.331Z"
+  },
+  {
+    "id": "builtin_text-2e6RQy",
+    "formData": {
+      "text": "Please tell us your relationship with the primary insured",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-09-27T10:59:59.357Z"
+  }
+]
