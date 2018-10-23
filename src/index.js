@@ -57,8 +57,21 @@ module.exports = async bp => {
   // All events that should be processed by the Flow Manager
   bp.hear({ type: /bp_dialog_timeout|text|message|quick_reply/i }, (event, next) => {
     bp.dialogEngine.processMessage(event.sessionId || event.user.id, event).then()
-  })
+  });
 
+  bp.hear({ platform: 'facebook', type: 'postback', text: 'GET_STARTED' }, (event, next) => {
+    console.log("asfsafs");
+      bp.renderers.sendToUser(event.user.id, '#!text-77734', { typingIndicators: false })
+   });
+
+
+/*  bp.middlewares.sendIncoming({
+     platform: 'facebook',
+     type: 'message',
+     user: 'profile',
+     text: e.message.text,
+     raw: e
+  })*/
 
 }
 

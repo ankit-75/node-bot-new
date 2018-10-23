@@ -20,6 +20,19 @@
     mime "^2.3.1"
     moment "^2.22.1"
 
+"@botpress/channel-messenger@^10.48.5":
+  version "10.48.5"
+  resolved "https://registry.yarnpkg.com/@botpress/channel-messenger/-/channel-messenger-10.48.5.tgz#ffb095df4c64fc61ae7d826427bcfc135f63125b"
+  dependencies:
+    bluebird "^3.4.6"
+    body-parser "^1.15.2"
+    eventemitter2 "^2.1.3"
+    lodash "^4.16.6"
+    lru-cache "^4.0.1"
+    node-fetch "^1.6.3"
+    react-audio-player "^0.9.0"
+    react-player "^1.1.2"
+
 "@botpress/channel-web@10.38.0":
   version "10.38.0"
   resolved "https://registry.yarnpkg.com/@botpress/channel-web/-/channel-web-10.38.0.tgz#cbd92955cc1edcf773e31613726bc3578f82bcb2"
@@ -1286,6 +1299,10 @@ deep-equal@~0.2.1:
 deep-extend@^0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/deep-extend/-/deep-extend-0.6.0.tgz#c4fa7c95404a17a9c3e8ca7e1537312b736330ac"
+
+deepmerge@^2.0.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-2.2.1.tgz#5d3ff22a01c00f645405a2fbc17d0778a1801170"
 
 define-properties@^1.1.2:
   version "1.1.3"
@@ -2822,6 +2839,10 @@ liftoff@~2.2.0:
     rechoir "^0.6.2"
     resolve "^1.1.7"
 
+load-script@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/load-script/-/load-script-1.0.0.tgz#0491939e0bee5643ee494a7e3da3d2bac70c6ca4"
+
 loaders.css@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/loaders.css/-/loaders.css-0.1.2.tgz#3a9fb43726c73334a38142af9d0629019b658743"
@@ -3180,7 +3201,7 @@ negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
 
-node-fetch@^1.0.1:
+node-fetch@^1.0.1, node-fetch@^1.6.3:
   version "1.7.3"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-1.7.3.tgz#980f6f72d85211a5347c6b2bc18c5b84c3eb47ef"
   dependencies:
@@ -3749,7 +3770,7 @@ prompt@^1.0.0:
     utile "0.3.x"
     winston "2.1.x"
 
-prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2:
+prop-types@^15.5.10, prop-types@^15.5.6, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2:
   version "15.6.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
   dependencies:
@@ -3895,6 +3916,12 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-audio-player@^0.9.0:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/react-audio-player/-/react-audio-player-0.9.1.tgz#0f5f2ad5df8dcb83e0fbdffa3da15d4aa2728238"
+  dependencies:
+    prop-types "^15.5.8"
+
 react-ga@^2.4.1:
   version "2.5.3"
   resolved "https://registry.yarnpkg.com/react-ga/-/react-ga-2.5.3.tgz#0f447c73664c069a5fc341f6f431262e3d4c23c4"
@@ -3921,6 +3948,14 @@ react-loaders@^3.0.1:
   resolved "https://registry.yarnpkg.com/react-loaders/-/react-loaders-3.0.1.tgz#963ad7adefe530b24b1ed13faf4645134cf09a0e"
   dependencies:
     classnames "^2.2.3"
+
+react-player@^1.1.2:
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/react-player/-/react-player-1.6.6.tgz#336de320fc8c0610d8f2292ec16b0056312a1964"
+  dependencies:
+    deepmerge "^2.0.1"
+    load-script "^1.0.0"
+    prop-types "^15.5.6"
 
 react-router-dom@^4.2.2:
   version "4.3.1"

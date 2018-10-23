@@ -1,1 +1,22 @@
-{"rendering.instrumentation":{"order":0,"enabled":true},"hitl.captureInMessages":{"order":1,"enabled":true},"nlu.incoming":{"order":2,"enabled":false},"hear":{"order":3,"enabled":true},"fallback":{"order":4,"enabled":true}}
+{
+	"rendering.instrumentation": {
+		"order": 0,
+		"enabled": true
+	},
+	"hitl.captureInMessages": {
+		"order": 1,
+		"enabled": true
+	},
+	"nlu.incoming": {
+		"order": 2,
+		"enabled": false
+	},
+	"hear": {
+		"order": 3,
+		"enabled": true
+	},
+	"fallback": {
+		"order": 4,
+		"enabled": true
+	}
+}
