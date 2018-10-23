@@ -1,0 +1,50 @@
+{
+  /************
+    THESE ARE REQUIRED FOR YOUR BOT TO RUN
+  *************/
+
+  "applicationID": "544809232638013", // ENV Variable: MESSENGER_APP_ID
+  "accessToken": "EAAHvgEjIID0BAGHehZAIhACSZCG07ZCzHYg1slwGmhPUzcxnGd9pdbf57ZCyUADgxiyCWQqqVTyUxZBN44y476j1bud3p1EXJZA4MqhLekQyqUjnVeSyvs1ME73it2AddkawgTSuYCvYlRPcyysZA9ZAhytxiCgk0TW57dnRpII1pAZDZD", // ENV Variable: MESSENGER_ACCESS_TOKEN
+  "appSecret": "07fded0e01c3a196de58345a4f911c8d", // ENV Variable: MESSENGER_APP_SECRET  
+
+  "verifyToken": "ankit_token", // <== Input a long random, hard-to-guess string here
+  "hostname": "9f735835.ngrok.io", // The URL to reach your bot, must be HTTPS (google: ngrok)
+
+  /************
+    Optional settings
+  *************/
+
+  "graphVersion": "3.1",
+  "enabled": true,
+  "enableAllProfileFields": false, // To be able to fetch all profile fields you need to submit your application for FB review
+
+  "displayGetStarted": true,
+  "greetingMessage": "Default greeting message",
+
+  // Documentation
+  // https://developers.facebook.com/docs/messenger-platform/messenger-profile/persistent-menu
+  "persistentMenu": [],
+  "persistentMenuItems": [],
+
+  "composerInputDisabled": false,
+  "automaticallyMarkAsRead": true,
+  "targetAudience": "openToAll",
+  "trustedDomains": [],
+
+  "autoResponseOption": "noResponse",
+  "autoResponseText": "Hello, human!",
+  "autoResponseTextRenderer": "#builtin_text",
+  "autoResponsePostback": "YOUR_POSTBACK",
+
+  "paymentTesters": [],
+  "chatExtensionHomeUrl": "",
+  "chatExtensionInTest": true,
+  "chatExtensionShowShareButton": false,
+  "webhookSubscriptionFields": [
+    "message_deliveries",
+    "messages",
+    "messaging_optins",
+    "messaging_postbacks",
+    "messaging_referrals"
+  ]
+}
