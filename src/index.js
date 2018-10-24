@@ -59,10 +59,10 @@ module.exports = async bp => {
     bp.dialogEngine.processMessage(event.sessionId || event.user.id, event).then()
   });
 
-  bp.hear({ platform: 'facebook', type: 'postback', text: 'GET_STARTED' }, (event, next) => {
+/*  bp.hear({ platform: 'facebook', type: 'postback', text: 'GET_STARTED' }, (event, next) => {
     console.log("asfsafs");
       bp.renderers.sendToUser(event.user.id, '#!text-77734', { typingIndicators: false })
-   });
+   });*/
 
 
 /*  bp.middlewares.sendIncoming({

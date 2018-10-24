@@ -8,7 +8,7 @@
   "appSecret": "07fded0e01c3a196de58345a4f911c8d", // ENV Variable: MESSENGER_APP_SECRET  
 
   "verifyToken": "ankit_token", // <== Input a long random, hard-to-guess string here
-  "hostname": "9f735835.ngrok.io", // The URL to reach your bot, must be HTTPS (google: ngrok)
+  "hostname": "13ae65d6.ngrok.io", // The URL to reach your bot, must be HTTPS (google: ngrok)
 
   /************
     Optional settings
